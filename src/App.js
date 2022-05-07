@@ -7,15 +7,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-        The Official website of Barcelona's Cup. The competition for the newest trophy in international pollution
+        The Official website of Barcelona's Cup. 
+The competition for the newest trophy in international pollution
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://americascup.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          America's Cup
         </a>
       </header>
     </div>
