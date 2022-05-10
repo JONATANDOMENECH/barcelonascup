@@ -1,9 +1,24 @@
 import logo from './logo.png';
 import './App.css';
+import { MapContainer, TileLayer } from 'react-leaflet'
 
 function App() {
   return (
     <div className="App">
+
+      <MapContainer center={[41.39, 2.15]} zoom={11} scrollWheelZoom={true}>
+
+           <TileLayer
+            attribution='&copy; <a href="https://www.esa.int/">EuropeanSpaceAgency</a> contributors'
+            url="https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
+            //"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+           <TileLayer
+            attribution='&copy; <a href="https://www.who.int/news/item/13-07-2021-who-launches-guidelines-for-recreational-water-quality-as-summer-heats-up">WorldHealthOrganization</a> contributors'
+            url="https://test-tileserver.s3.eu-central-1.amazonaws.com/CDOM/{z}/{x}/{y}.png"
+          />
+      </MapContainer>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
