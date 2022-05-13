@@ -6,7 +6,10 @@ function App() {
   return (
     <div className="App">
 
-      <MapContainer center={[41.39, 2.15]} zoom={11} scrollWheelZoom={true}>
+      <MapContainer 
+      center={[38.58, -9.44]} 
+      minZoom={8} maxZoom={11} zoom={11} 
+      scrollWheelZoom={false}>
 
            <TileLayer
             attribution='&copy; <a href="https://www.esa.int/">EuropeanSpaceAgency</a> contributors'
